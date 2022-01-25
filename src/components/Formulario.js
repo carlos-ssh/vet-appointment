@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid'; // uuid es una paqueteria de NPM para crear ID's
 
-const Formulario = () => {
+const Formulario = ({crearCita}) => {
 
   //Crea el estado de las citas
   const [cita, actualizarCita] = useState({
@@ -43,9 +43,16 @@ const Formulario = () => {
     console.log(cita);
 
     // Crear cita
-    
+    crearCita(cita);
 
     // Reiniciar el Form
+    actualizarCita({
+      mascota: '',
+      propietario: '',
+      fecha: '',
+      hora: '',
+      sintomas: ''
+    });
   }
 
   return (
