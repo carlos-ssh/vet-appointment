@@ -11,12 +11,6 @@ function App() {
             <Formulario />
           </div>
           <div className="one-half column">
-            <h2>Listado de Citas</h2>
-            <ul>
-              <li>Cita 1</li>
-              <li>Cita 2</li>
-              <li>Cita 3</li>
-            </ul>
           </div>
         </div>
       </div>
